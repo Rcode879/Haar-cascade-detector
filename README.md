@@ -5,4 +5,6 @@ opencv-python
 # Notes
 -This program uses your computer webcam to detect front faces, side faces and full bodies of humans
 
+-This is done via OpenCV's built in Haar cascade xml files
+
 -The caption that appears next to the bounding box will indicate which of the 3 it detects

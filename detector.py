@@ -22,7 +22,7 @@ while True:
 
     for (x, y, w, h) in faces:
         font = cv2.FONT_HERSHEY_SIMPLEX
-        cv2.putText(frame, 'target', (x-50,y-20), font, 1, (0, 0, 255),3, cv2.LINE_AA)
+        cv2.putText(frame, 'front face', (x-50,y-20), font, 1, (0, 0, 255),3, cv2.LINE_AA)
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0,255, 0), 5)
         cv2.line(frame, (x,y), (x + w, y + h),(0,0,0), 2)
         cv2.line(frame, (x + w, y), (x, y + h), (0,0,0), 2)
@@ -43,7 +43,7 @@ while True:
     if len(faces) == 0:
         for (sx, sy, sw, sh) in side_faces:
             font = cv2.FONT_HERSHEY_SIMPLEX
-            cv2.putText(frame, 'face detected', (10, height - 10), font, 2, (0, 0, 255), 5, cv2.LINE_AA)
+            cv2.putText(frame, 'side face detected', (10, height - 10), font, 2, (0, 0, 255), 5, cv2.LINE_AA)
             cv2.rectangle(frame, (sx, sy), (sx + sw, sy + sh), (255, 0, 0), 5)
 
 

@@ -15,7 +15,7 @@ This Python script utilizes OpenCV to perform real-time detection of frontal fac
 
     ```bash
     git clone https://github.com/Rcode879/Haar-cascade-detector.git
-    cd face-body-detection
+    cd Haar-cascade-detector
     ```
 
 2. **Install the required libraries**:
